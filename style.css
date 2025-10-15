@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #f8f5fb;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #7e3ff2;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  transition: color .3s;
+}
+nav a:hover {
+  color: #7e3ff2;
+}
+.cta {
+  padding: 10px 20px;
+  background: #7e3ff2;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background .3s;
+}
+.cta:hover {
+  background: #5b2ccf;
+}
+
+/* MAIN */
+main {
+  padding: 60px 10%;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #4a1ea6;
+  margin-bottom: 20px;
+}
+p.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+.illustration {
+  width: 60%;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  display: block;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.feature {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform .3s;
+}
+.feature:hover {
+  transform: translateY(-5px);
+}
+.feature h3 {
+  color: #7e3ff2;
+  margin-bottom: 10px;
+}
+
+/* ASK BOX */
+.ask-box {
+  margin-top: 60px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.ask-box h2 {
+  color: #4a1ea6;
+  margin-bottom: 15px;
+}
+.ask-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.ask-box button {
+  background: #7e3ff2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .3s;
+}
+.ask-box button:hover {
+  background: #5b2ccf;
+}
+.response {
+  margin-top: 20px;
+  background: #f3e9ff;
+  padding: 15px;
+  border-radius: 8px;
+  color: #4a1ea6;
+  display: none;
+}
+
+/* FOOTER */
+footer {
+  background: #4a1ea6;
+  color: #eee;
+  text-align: center;
+  padding: 30px 10%;
+  margin-top: 60px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .feature {
+    width: 90%;
+  }
+  .illustration {
+    width: 80%;
+  }
+}
